@@ -1,0 +1,12 @@
+Unknown
+from sympy import symbols, Eq, solve
+
+# Define the variables and equation
+x, y = symbols('x y')
+eq = Eq(x**2 + y**2, 1)
+
+# Solve the equation
+solution = solve(eq, y)
+
+# Print the result
+print(f"The value of y is {solution}")
